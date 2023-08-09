@@ -19,10 +19,6 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt_1JnChl_GLNvOPtDDtEgA717KVLSV_yyQA&usqp=CAU');
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
   animation-name: blackAndWhite;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -62,6 +58,25 @@ header {
   text-align: center;
   font-size: x-large;
   font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+a, a:visited {
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  border: 2px solid bisque;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+a:hover, a:active {
+  background-color: bisque;
+  color: white;
 }
 
 main {

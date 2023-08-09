@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>What Are Your Goals?</header>
+    <nav><a href="inspiration.html">Inspiration Gallery</a></nav>
+    <main>
+        <section>
+          <h2>Add a Goal</h2>
+          <div>
+            <input type="text" id="goalInput" placeholder="Enter your goal">
+            <button id="addGoalButton">Add Goal</button>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Goal List</h2>
+          <ul id="goalList"></ul>
+        </section>
+        
+        <section>
+          <h2>Need some motivation??</h2>
+          <div>
+            <button id="inspirationButton">Get Inspiration</button>
+            <button id="jokeButton">Hear a Joke</button>
+          </div>
+        </section>
+    </main>
+
+    <footer class="goalGetter">
+        <p>&copy; 2023 Goals. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

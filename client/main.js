@@ -74,7 +74,7 @@ const displayGoals = () => {
     updateBtn.id = 'updateButton'
     updateBtn.textContent = "Update";
     updateBtn.addEventListener("click", () => {
-        updateGoal(index, goal);
+      updateGoal(index, goal);
     });
     
     const deleteButton = document.createElement('button');
@@ -110,7 +110,8 @@ const updateBtn = document.getElementById("updateButton");
 const updateGoal = (id, goal) => {
     const updatedGoal = prompt("Enter the updated goal:", goal);
     if (updatedGoal) {
-      axios.put(`http://localhost:5000/api/goals/${id}`, { goal: updatedGoal })
+      const completionDate = goalsArr[id].completionDate
+      axios.put(`http://localhost:5000/api/goals/${id}`, { goal: updatedGoal})
         .then(res => {
           alert(res.data.message);
           displayGoals();
